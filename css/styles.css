@@ -11208,7 +11208,7 @@ header.masthead .container {
 
 @media (max-width: 768px) {
   #portfolio .portfolio-item p {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 }
 
