@@ -1,0 +1,108 @@
+@charset "utf-8"
+
+/* PROJECT: Hellenic Bakery Menu
+ * FILE: buttons.css
+ * DESCRIPTION: Global button styles, hover effects, and navigation triggers.
+ * AUTHOR: Ryley Challis
+ */
+
+ footer {
+    padding: 60px 0 100px 0 !important; /* Added the bottom white space you wanted */
+    background-color: #ffffff !important;
+    text-align: center !important;
+}
+
+.footer-links {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center !important;
+    gap: 40px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin-bottom: 40px !important;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+
+.footer ul:hover {
+  text-decoration: underline !important;
+}
+
+.footer-links a {
+  color: #2d2d2d !important;
+    font-weight: 600 !important; /* Makes them look like primary links */
+    font-family: 'Lato';
+    text-transform: uppercase !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 1px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #666 !important;
+}
+
+.footer-legal {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    margin-bottom: 30px !important;
+
+    color: #8a6642 !important; /* Your bakery gold color */
+    font-weight: 500 !important;
+    font-size: 0.85rem !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid transparent !important; /* Prep for hover */
+    transition: all 0.3s ease !important;
+}
+
+.footer-legal:hover {
+  color: #8a6642 !important;
+}
+
+.footer-legal a:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+    color: #ddd; /* Light grey so it doesn't distract */
+    pointer-events: none; /* Make sure you can't click the pipe */
+}
+
+.footer-social {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 40px !important;
+}
+
+.btn-social {
+  display: inline-flex !important;
+    align-items: center !important;     /* Centers icon vertically */
+    justify-content: center !important;  /* Centers icon horizontally */
+    width: 50px !important;              /* Width and Height must match */
+    height: 50px !important;
+    border-radius: 50% !important;       /* This makes it a circle */
+    background-color: #2d2d2d !important;
+    text-decoration: none !important;
+    transition: 0.2s ease !important;
+}
+
+/* Fix for the white icons you wanted */
+footer .btn-social i {
+  color: #fff;  
+}
+
+footer .btn-social:hover {
+  background-color: #666 !important;
+}
+
+.copyright {
+  color: #888 !important;
+  font-size: 0.85rem !important;
+  font-weight: 400 !important;
+}
